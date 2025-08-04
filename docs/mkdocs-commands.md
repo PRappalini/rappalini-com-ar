@@ -36,6 +36,12 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install mkdocs mkdocs-material mkdocs-cinder
 ```
 
+### Generar el sitio estático Desde la raíz del proyecto
+
+```bash
+mkdocs build
+```bash
+
 
 
 
