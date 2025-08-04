@@ -4,12 +4,20 @@ site_author: Pablo Rappalini
 site_url: https://rappalini.com.ar
 
 theme:
-  name: material
+  name: cinder # otros temas: mkdocs - readthedocs - material
+  logo: images/logo.png
+#  favicon: images/logo.png
+  favicon: images/favicon_io/favicon.ico
   language: es
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: yellow
+      accent: grey
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: yellow
+      accent: black
   font:
     text: Roboto
     code: Roboto Mono
@@ -22,8 +30,8 @@ theme:
 nav:
   - Inicio: index.md
   - Proyectos:
-      - Proyecto A: proyectos/proyecto-a.md
-      - Proyecto B: proyectos/proyecto-b.md
+      - Infraestructura: proyectos/infra.md
+      - Seguridad: proyectos/sec.md
   - Sobre mí: about.md
   - Contacto: contacto.md
   - Data: mkdocs-commands.md
