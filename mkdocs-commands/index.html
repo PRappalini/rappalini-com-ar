@@ -151,6 +151,13 @@
                 <li class="third-level"><a href="#instalar-pip-para-python-3">Instalar pip para python 3</a></li>
                 <li class="third-level"><a href="#crear-un-entorno-virtual-en-la-carpeta-venv-y-activarlo-solo-en-debian-y-derivados">Crear un entorno virtual en la carpeta .venv y Activarlo (SOLO EN DEBIAN y derivados)</a></li>
                 <li class="third-level"><a href="#instalar-mkdocs-el-tema-material-y-el-tema-cinder">Instalar MkDocs, el tema Material y el tema Cinder</a></li>
+            <li class="second-level"><a href="#editar-a-gusto-los-archivos">EDITAR A GUSTO LOS ARCHIVOS</a></li>
+                
+                <li class="third-level"><a href="#probarlo-local">PROBARLO LOCAL</a></li>
+                <li class="third-level"><a href="#generar-el-sitio-estatico-desde-la-raiz-del-proyecto">Generar el sitio estático Desde la raíz del proyecto</a></li>
+                <li class="third-level"><a href="#subir-el-sitio-estatico-a-github-en-el-branch-gh-pages">Subir el sitio estático a GitHub en el branch gh-pages</a></li>
+            <li class="second-level"><a href="#chequear-configuracion-de-mi-guthub-site">CHEQUEAR CONFIGURACION DE MI GUTHUB SITE</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -180,7 +187,35 @@ docs/
 </code></pre></div>
 <h3 id="instalar-mkdocs-el-tema-material-y-el-tema-cinder">Instalar MkDocs, el tema Material y el tema Cinder<a class="headerlink" href="#instalar-mkdocs-el-tema-material-y-el-tema-cinder" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>mkdocs-cinder
-</code></pre></div></div>
+</code></pre></div>
+<h2 id="editar-a-gusto-los-archivos">EDITAR A GUSTO LOS ARCHIVOS<a class="headerlink" href="#editar-a-gusto-los-archivos" title="Permanent link">&para;</a></h2>
+<h3 id="probarlo-local">PROBARLO LOCAL<a class="headerlink" href="#probarlo-local" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+<p><a href="localhost:8000">Sitio Local</a></p>
+<h3 id="generar-el-sitio-estatico-desde-la-raiz-del-proyecto">Generar el sitio estático Desde la raíz del proyecto<a class="headerlink" href="#generar-el-sitio-estatico-desde-la-raiz-del-proyecto" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>build
+<span class="c1"># Respuesta:</span>
+<span class="c1"># INFO    -  Building documentation to directory: PATH-TO-REPOS\rappalini-com-ar\site</span>
+</code></pre></div>
+<h3 id="subir-el-sitio-estatico-a-github-en-el-branch-gh-pages">Subir el sitio estático a GitHub en el branch gh-pages<a class="headerlink" href="#subir-el-sitio-estatico-a-github-en-el-branch-gh-pages" title="Permanent link">&para;</a></h3>
+<h4 id="manual">Manual<a class="headerlink" href="#manual" title="Permanent link">&para;</a></h4>
+<p>Creás el branch <em>gh-pages</em></p>
+<p>Subís el contenido de <strong>site/</strong> a ese branch (raíz del branch, no en una carpeta)</p>
+<p>En GitHub configurás que Pages sirva desde gh-pages branch / root</p>
+<h4 id="automatico-con-mkdocs">Automático con mkdocs<a class="headerlink" href="#automatico-con-mkdocs" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
+<p><strong>Respuesta:</strong></p>
+<p>INFO    -  Building documentation to directory: PATH-TO-REPOS\rappalini-com-ar\site
+INFO    -  Copying 'PATH-TO-REPOS\rappalini-com-ar\site' to 'gh-pages' branch and pushing to GitHub.
+remote: Create a pull request for 'gh-pages' on GitHub by visiting:
+remote:      https://github.com/PRappalini/rappalini-com-ar/pull/new/gh-pages</p>
+<p>To https://github.com/PRappalini/rappalini-com-ar.git</p>
+<p>[new branch]      gh-pages -&gt; gh-pages</p>
+<p><a href="https://PRappalini.github.io/rappalini-com-ar/">Your Site</a></p>
+<h2 id="chequear-configuracion-de-mi-guthub-site">CHEQUEAR CONFIGURACION DE MI GUTHUB SITE<a class="headerlink" href="#chequear-configuracion-de-mi-guthub-site" title="Permanent link">&para;</a></h2>
+<p>https://github.com/PRappalini/rappalini-com-ar/settings/pages</p></div>
         
         
     </div>
