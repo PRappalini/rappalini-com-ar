@@ -20,21 +20,21 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ### Instalar pip para python 3
 
-    ```bash
-    sudo apt install python3-pip -y 
-    ```
+```bash
+sudo apt install python3-pip -y 
+```
 
-### Crear un entorno virtual en la carpeta .venv y Activarlo
+### Crear un entorno virtual en la carpeta .venv y Activarlo (SOLO EN DEBIAN y derivados)
 
-    ```bash
-    python3 -m venv .venv && source .venv/bin/activate
-    ```
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+```
 
 ### Instalar MkDocs, el tema Material y el tema Cinder
 
-    ```bash
-    pip install mkdocs mkdocs-material mkdocs-cinder
-    ```
+```bash
+pip install mkdocs mkdocs-material mkdocs-cinder
+```
 
 
 
