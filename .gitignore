@@ -1,0 +1,29 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.swp
+*.bak
+*.DS_Store
+Thumbs.db
+
+# Config de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MkDocs generado (aunque gh-deploy lo maneja en otro branch)
+site/
+
+# Archivos de entorno
+.env
