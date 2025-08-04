@@ -51,34 +51,35 @@ mkdocs serve
 ```bash
 mkdocs build
 # Respuesta:
-INFO    -  Building documentation to directory: PATH-TO-REPOS\rappalini-com-ar\site
+# INFO    -  Building documentation to directory: PATH-TO-REPOS\rappalini-com-ar\site
 ```
 
+### Subir el sitio estático a GitHub en el branch gh-pages
 
+#### Manual
 
+Creás el branch *gh-pages*
 
+Subís el contenido de **site/** a ese branch (raíz del branch, no en una carpeta)
 
+En GitHub configurás que Pages sirva desde gh-pages branch / root
 
+#### Automático con mkdocs
 
+```bash
 mkdocs gh-deploy
-INFO    -  Cleaning site directory
-INFO    -  Building documentation to directory: C:\Users\pablo.rappalini\0-REPOS\rappalini-com-ar\site
-INFO    -  Documentation built in 0.30 seconds
-WARNING -  Version check skipped: No version specified in previous deployment.
-INFO    -  Copying 'C:\Users\pablo.rappalini\0-REPOS\rappalini-com-ar\site' to 'gh-pages' branch and pushing to GitHub.
-Enumerating objects: 74, done.
-Counting objects: 100% (74/74), done.
-Delta compression using up to 12 threads
-Compressing objects: 100% (68/68), done.
-Writing objects: 100% (74/74), 2.22 MiB | 1.34 MiB/s, done.
-Total 74 (delta 6), reused 10 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (6/6), done.
-remote: 
+```
+
+**Respuesta:**
+
+INFO    -  Building documentation to directory: PATH-TO-REPOS\rappalini-com-ar\site
+INFO    -  Copying 'PATH-TO-REPOS\rappalini-com-ar\site' to 'gh-pages' branch and pushing to GitHub.
 remote: Create a pull request for 'gh-pages' on GitHub by visiting:
 remote:      https://github.com/PRappalini/rappalini-com-ar/pull/new/gh-pages
-remote: 
-To https://github.com/PRappalini/rappalini-com-ar.git
- * [new branch]      gh-pages -> gh-pages
-INFO    -  Your documentation should shortly be available at: https://PRappalini.github.io/rappalini-com-ar/
 
+To https://github.com/PRappalini/rappalini-com-ar.git
+
+[new branch]      gh-pages -> gh-pages
+
+[Your documentation should shortly be available at:](https://PRappalini.github.io/rappalini-com-ar/)
 
