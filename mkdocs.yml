@@ -1,1 +1,52 @@
 site_name: Rappalini
+site_description: Pablo Rappalini
+site_author: Pablo Rappalini
+site_url: https://rappalini.com.ar
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.expand
+    - navigation.instant
+    - toc.integrate
+    - content.code.copy
+
+nav:
+  - Inicio: index.md
+  - Proyectos:
+      - Proyecto A: proyectos/proyecto-a.md
+      - Proyecto B: proyectos/proyecto-b.md
+  - Sobre mí: about.md
+  - Contacto: contacto.md
+  - Data: mkdocs-commands.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+# Extra (favicon, logo, etc.)
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/prappalini
+    - icon: fontawesome/solid/envelope
+      link: mailto:rappalini@gmail.com
+#      link: mailto:pablo@rappalini.com.ar
