@@ -15,3 +15,28 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+## INSTALATION
+
+### Instalar pip para python 3
+
+    ```bash
+    sudo apt install python3-pip -y 
+    ```
+
+### Crear un entorno virtual en la carpeta .venv y Activarlo
+
+    ```bash
+    python3 -m venv .venv && source .venv/bin/activate
+    ```
+
+### Instalar MkDocs, el tema Material y el tema Cinder
+
+    ```bash
+    pip install mkdocs mkdocs-material mkdocs-cinder
+    ```
+
+
+
+
+
