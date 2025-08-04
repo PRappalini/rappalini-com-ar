@@ -81,9 +81,8 @@ To https://github.com/PRappalini/rappalini-com-ar.git
 
 [new branch]      gh-pages -> gh-pages
 
-[Your documentation should shortly be available at:](https://PRappalini.github.io/rappalini-com-ar/)
+[Your Site](https://PRappalini.github.io/rappalini-com-ar/)
 
 ## CHEQUEAR CONFIGURACION DE MI GUTHUB SITE
 
 https://github.com/PRappalini/rappalini-com-ar/settings/pages
-
