@@ -215,7 +215,7 @@ Esto garantiza que se instalen exactamente las versiones listadas.
 
 #### Ejemplo
 
-***File "requirements.txt"***
+File ***"requirements.txt"***
 
 ```python
 # requirements.txt - Dependencies for MkDocs project
