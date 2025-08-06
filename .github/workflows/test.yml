@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:  # 👉 esto te permite dispararlo manualmente desde GitHub
 
 jobs:
   test:
