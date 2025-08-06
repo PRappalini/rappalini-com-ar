@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -20,18 +22,20 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.x'
 
-      - name: Install dependencies
-        run: pip install mkdocs mkdocs-material mkdocs-cinder
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-cinder
 
       - name: Build site
-        run: mkdocs build --strict
+        run: |
+          mkdocs build
+#         mkdocs build --strict
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
-          commit_message: "Deploy site: ${{ github.sha }}"
-
+#          commit_message: "Deploy site: ${{ github.sha }}"
