@@ -1,0 +1,13 @@
+name: Test Workflow
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:  # 👉 esto te permite dispararlo manualmente desde GitHub
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello GitHub Actions!"
